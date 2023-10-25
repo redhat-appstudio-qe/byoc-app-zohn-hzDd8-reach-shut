@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: zmvt
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-hrsx-tenant/byoc-app-zohn/zmvt@sha256:4fc335427daa9965c369c3329a5a5dbdc105f312ea1012660e003f55117545e5
         name: my-java-quarkus
         ports:
         - containerPort: 8081
