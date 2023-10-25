@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: zmvt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-hrsx-tenant/byoc-app-zohn/zmvt@sha256:4fc335427daa9965c369c3329a5a5dbdc105f312ea1012660e003f55117545e5
+        name: my-java-quarkus
+        resources: {}
+status: {}
